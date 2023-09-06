@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-2</title>
+    <style>
+        .container{
+            display:grid;
+        }
+        .item1{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            display: flex; /* Center content vertically */
+            flex-direction: column; /* Stack children vertically */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+        }
+        .item2{
+            grid-column-start: 3;
+            grid-column-end: 4;
+            text-align: center;
+            display: flex; /* Center content vertically */
+            flex-direction: column; /* Stack children vertically */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
+        }
+        #one{
+            list-style-type: none;
+            width: 100px;
+            margin: 0;
+            padding: 0;
+        }
+        .one1 a{
+            text-decoration: none ;
+            display: block;
+            padding: 8px 16px;
+            width: 140px;
+        }
+        .one1 a.active{
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+        }
+        .one1 a:hover:not(.active){
+            background-color: orange;
+            color: white;
+            font-weight: bold;
+        }
+        .one1 a.notactive{
+            background-color: rgb(102, 224, 245);
+            color: blue;
+            font-weight: bold;
+        }
+        #two{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: rgb(199, 199, 199);
+        }
+        .two2{
+            float: left;
+            border-right: 1px solid rgb(25, 2, 194);
+        }
+        .two2 a{
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            padding: 14px 16px;
+        }
+        .two2 a.active1{
+            background-color: rgb(104, 104, 104);
+            color: White;
+            font-weight: bold;
+        }
+        .two2 a:hover:not(.active1){
+            background-color: rgb(104, 104, 104);
+            color: white;
+            font-weight: bold;
+        }
+        .two2 a.notactive1{
+            background-color: rgb(199, 199, 199);
+            color: blue;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">
+            <h4>Vertical Navigation Bar</h4>
+            <ul id="one">
+                <li class="one1"><a href="#home" class="active">Home</a></li>
+                <li class="one1"><a href="#java" class="notactive">Java</a></li>
+                <li class="one1"><a href="#css" class="notactive">CSS</a></li>
+                <li class="one1"><a href="#html" class="notactive">HTML</a></li>
+                <li class="one1"><a href="#bs" class="notactive">Bootstrap</a></li>
+            </ul>
+        </div>
+        <div class="item2">
+            <h4>Horizontal Navigation Bar</h4>
+            <ul id="two">
+                <li class="two2"><a href="#home" class="active1">Home</a></li>
+                <li class="two2"><a href="#java" class="notactive1">Java</a></li>
+                <li class="two2"><a href="#css" class="notactive1">CSS</a></li>
+                <li class="two2"><a href="#html" class="notactive1">HTML</a></li>
+                <li class="two2"><a href="#bs" class="notactive1">Bootstrap</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
